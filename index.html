@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List App</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div id="container" class="container">
+                <h1>My Tasks</h1>
+                <p id="message">You have no tasks</p>
+                <div id="task-wrapper">
+
+                </div>
+                <!-- <div id="newtask" class="added-tasks">
+                    <div class="new-title">
+                        <p id="new-title"></p>
+                        <i id="delete" class="fa-solid fa-trash delete"></i>
+                    </div>
+                    <p id="new-summary"></p>
+                </div> -->
+                <button id="btn">Add New Task</button>
+                <div id="showModal" class="modal">
+                    <div class="modal-content">
+                        <form onsubmit="submitFormReturn();return false;">
+                            <h3>Add New Task</h3>
+                            <div class="title-name">
+                                <label for="title">Title</label>
+                                <input type="text" id="title" name="title" placeholder="Task Title" />
+                            </div>
+                            <div class="description">
+                                <label for="summary">Summary</label>
+                                <input type="text" id="summary" name="summary" placeholder="Task Summary" />
+                            </div>
+                            <div class="task-btn">
+                                <button class="cancel">Cancel</button>
+                                <input id="submit" type="submit" class="created" value="Create Task" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="index.js"></script>
+
+</html>
